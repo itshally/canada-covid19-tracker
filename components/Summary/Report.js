@@ -1,18 +1,22 @@
 import { Grid } from '@material-ui/core'
-import { CastForEducationSharp } from '@material-ui/icons'
 import ReportItem from './ReportItem'
 
 const Report = ({data}) => {
-    console.log('data', data)
     return (
-        <Grid container spacing={3}>
-            <p>Report container</p>
-            <ReportItem report={data}/>
-        </Grid>
+        <>
+            <Grid container spacing={3}>
+                {/* <p>Report container</p> */}
+                <ReportItem cases={data}/>
+            </Grid>
+
+            <h2>Vaccines Report</h2>
+            
+            <Grid container spacing={3}>
+                {/* <p>Report container</p> */}
+                <ReportItem vaccines={data}/>
+            </Grid>
+        </>
     )
 }
 
 export default Report
-
-
-
