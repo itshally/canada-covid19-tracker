@@ -120,3 +120,18 @@
     flex-direction: column;
   }
 }
+
+.grid_item{
+  background-color: #eceaea;
+  padding: 1rem;
+  border-radius: 12.5px;
+  -webkit-box-shadow: 0 5px 5px -5px #777;
+     -moz-box-shadow: 0 5px 5px -5px #777;
+          box-shadow: 0 5px 5px -5px #777;
+}
+
+.summary_container{
+  background-color: white;
+  width: auto;
+  padding: 1.5rem;
+}
