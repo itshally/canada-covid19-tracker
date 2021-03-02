@@ -3,8 +3,8 @@ import axios from "axios";
 
 export default async (req, res) => {
 
-    const URL = `https://api.opencovid.ca/summary`
+    const URL = `https://api.covid19tracker.ca/summary`
     const response = await axios.get(URL);
 
-    res.status(200).json(response.data.summary)
+    res.status(200).json(response.data)
 }
