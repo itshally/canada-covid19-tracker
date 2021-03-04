@@ -4,12 +4,13 @@ import styles from '../styles/Home.module.css'
 import moment from 'moment'
 import { Container } from '@material-ui/core'
 import Report from '../components/Summary/Report'
+import Province from '../components/Summary/Province'
 
 const fetcher = url => fetch(url).then((res) => res.json())
 
 const Home = () => {
   const { data, error } = useSWR('/api/summary', fetcher)
-  
+  // console.log('13', data[0])
   return (
     <div className={styles.container}>
       
@@ -25,6 +26,8 @@ const Home = () => {
             <Report data={data.data[0]}/>
           ) : <p>Loading...</p>
         }
+
+        <Province/>
       </Container>     
     </div>
   )
