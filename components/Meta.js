@@ -10,7 +10,7 @@ const Meta = ({title, description, keywords}) => {
             <meta name="description" content={description ? description : "..."}/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <meta name="keywords" content={keywords ? keywords : "..."} />
-            
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
         </Head>
         </>
     )
